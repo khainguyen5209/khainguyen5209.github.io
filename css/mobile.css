@@ -37,6 +37,7 @@
     }
     #showcase .showcase-content {
         top: 90px;
+        height: 112%;
     }
     #who {
         display: block;
