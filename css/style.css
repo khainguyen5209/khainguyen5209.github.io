@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* CSS reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* set font of webside */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+
+/* underline, none */
+
+a {
+    text-decoration: none;
+}
+
+
+/* margin back to the paragraphs: because of CSS above */
+
+p {
+    margin: 0.75rem 0;
+}
+
+
+/* Utility*/
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: visible;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Coloring the first title: "Edge" is green and "Ledge" is white */
+
+.text-primary {
+    color: #93cb52;
+}
+
+
+/* background style */
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+
+
+/* heading style */
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    /* line-height: 1.3rem */
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /* line-height: 1.3rem */
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+    /* line-height: 1.3rem */
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background: #93cb52;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+
+/* padding y asix */
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+
+/* padding x asix */
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.btn:hover {
+    background: #7ab436;
+    border-radius: 5px;
+}
+
+.btn-dark {
+    color: #fff;
+    background: #333;
+}
+
+
+/* list style */
+
+.list {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.list li {
+    margin: 0.5rem 0;
+    border-bottom: #444 dotted 3px;
+}
+
+
+/* Navbar */
+
+#navbar {
+    /* divide navbar into 2 part (h1 anf ul), add space between them */
+    display: flex;
+    justify-content: space-between;
+    /* stick the navbar on the top of page */
+    position: sticky;
+    top: 0;
+    /* set color of navbar */
+    background: #333;
+    /* set color of title */
+    color: white;
+    /* put navibar on top of every content of website: 1 is highest, 2 is lower and so on*/
+    z-index: 1;
+    /* add padding (top and bottom) */
+    padding: 1rem;
+}
+
+#navbar span {
+    display: flex;
+    align-items: center;
+}
+
+#navbar h1 {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    /* display in one row */
+    align-items: center;
+    /* align center between top and bottom */
+    list-style: none;
+    /* delete 'dot' in front of list */
+}
+
+#navbar ul li a {
+    color: #fff;
+    /* set color of text */
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+    /* the corners of box is a little rounded */
+}
+
+
+/* showcase */
+
+#showcase {
+    background: #333 url(../img/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    /* stretch image to fit vertical */
+    color: #fff;
+    /* color off Text in showcase*/
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    /* distance between text and border */
+    padding: 0 2rem;
+    /* position of content */
+    left: 0px;
+    top: 65px;
+    /* height and wigth of content */
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Section: what we do */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+/* Section: Who we are */
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url('../img/people.jpg') no-repeat center center/cover;
+    width: 100vw;
+}
+
+
+/* Section: Client */
+
+#client .items {
+    display: flex;
+}
+
+
+/* logo is so big, process it smaller */
+
+#client .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+
+/* <!-- Section: Contact/ --> */
+
+#contact {
+    display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
