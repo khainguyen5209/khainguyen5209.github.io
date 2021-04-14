@@ -37,7 +37,7 @@
     }
     #showcase .showcase-content {
         top: 90px;
-        height: 112%;
+        height: 100%;
     }
     #who {
         display: block;
@@ -66,9 +66,6 @@
         position: absolute;
         /* Iphone use this line */
     }
-    #main-footer {
-        margin-top: 200px;
-    }
 }
 
 
@@ -76,6 +73,7 @@
 
 @media(max-height: 640px) {
     #showcase .showcase-content {
+        /* top: 95px; */
         top: 172px;
         margin-top: -5rem;
     }
@@ -87,9 +85,8 @@
         margin-bottom: 3rem;
     }
     #contact .map {
-        height: 200px;
+        height: 300px;
         border-top: 4px solid #333;
         position: absolute;
-        /* overflow: visible; */
     }
 }
