@@ -214,6 +214,9 @@ p {
     /* color off Text in showcase*/
 }
 
+
+/* normal view */
+
 #showcase .showcase-content {
     display: flex;
     flex-direction: column;
@@ -226,8 +229,9 @@ p {
     /* position of content */
     left: 0px;
     top: 65px;
-    /* height and wigth of content */
-    height: 100%;
+    /* height and width of content - use 100vh instead of 100% => auto fit to background */
+    /* put this line in master.css, another *.css will inherit this file */
+    height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
 }

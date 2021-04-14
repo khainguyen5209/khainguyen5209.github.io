@@ -31,7 +31,7 @@ $('#navbar a, .btn').on('click', function(even) {
         even.preventDefault();
         const hash = this.hash;
         $('html, body').stop().animate({
-                'scrollTop': $(hash).offset().top - 100
+                'scrollTop': $(hash).offset().top - 91
             },
             700
         );
